@@ -79,8 +79,8 @@ body {
   border-bottom-color: hsl(60, 50%, 50%);
 }
 
-.menu__item.active,
-.menu__item.active:hover {
+.menu__item-active,
+.menu__item-active:hover {
   opacity: 1;
   border-bottom-color: hsl(120, 50%, 50%);
 }

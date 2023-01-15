@@ -3,12 +3,15 @@ import PropTypes from 'prop-types';
 import {NavLink} from 'react-router-dom';
 
 function Menu(props) {
+
+  const className = ({ isActive }) => isActive ? 'menu__item menu__item-active' : 'menu__item';
+
   return (
     <nav className='menu'>
-        <NavLink to='/' className='menu__item'>Главная</NavLink>
-        <NavLink to='/drift' className='menu__item'>Дрифт-такси</NavLink>
-        <NavLink to='/timeattack' className='menu__item'>Time Attack</NavLink>
-        <NavLink to='/forza' className='menu__item'>Forza Karting</NavLink>
+        <NavLink to='/' className={className}>Главная</NavLink>
+        <NavLink to='/drift' className={className}>Дрифт-такси</NavLink>
+        <NavLink to='/timeattack' className={className}>Time Attack</NavLink>
+        <NavLink to='/forza' className={className}>Forza Karting</NavLink>
     </nav>
   )
 }
